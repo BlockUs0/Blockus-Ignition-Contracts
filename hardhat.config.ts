@@ -91,7 +91,7 @@ const config: HardhatUserConfig = {
         network: "sei",
         chainId: 1329,
         urls: {
-          apiURL: "https://seitrace.com/pacific-1/ap",
+          apiURL: "https://seitrace.com/pacific-1/api",
           browserURL: "https://seitrace.com/pacific-1",
         },
       },
