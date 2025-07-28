@@ -70,7 +70,7 @@ contract BlockusPremint is ERC721, ERC721Enumerable, Ownable, Pausable, ERC2771C
      */
     function _premintAll(address to) internal {
         for (uint256 i = 1; i <= TOTAL_SUPPLY; i++) {
-            _safeMint(to, i);
+            _safeMint(to, i, "");
             emit TokenMinted(to, i);
         }
         _currentTokenId = TOTAL_SUPPLY;
