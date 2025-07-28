@@ -55,7 +55,7 @@ contract Blockus721Simple is ERC721, ERC721Enumerable, Ownable, Pausable, ERC277
         _currentTokenId++;
         uint256 tokenId = _currentTokenId;
         
-        _safeMint(to, tokenId);
+        _safeMint(to, tokenId, "");
         
         emit TokenMinted(to, tokenId);
         
@@ -78,7 +78,7 @@ contract Blockus721Simple is ERC721, ERC721Enumerable, Ownable, Pausable, ERC277
             _currentTokenId++;
             uint256 tokenId = _currentTokenId;
             
-            _safeMint(to, tokenId);
+            _safeMint(to, tokenId, "");
             tokenIds[i] = tokenId;
             
             emit TokenMinted(to, tokenId);
