@@ -15,7 +15,7 @@ const DeployBlockus721PremintModule = buildModule("DeployBlockus721PremintModule
   
   // Default to soulbound tokens
   const isSoulbound = m.getParameter("isSoulbound", true);
-  const totalSupply = m.getParameter("totalSupply", 1000);
+  const totalSupply = m.getParameter("totalSupply", 10);
 
   console.log({
     name,
